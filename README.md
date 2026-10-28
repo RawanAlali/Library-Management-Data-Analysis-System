@@ -72,7 +72,8 @@ REFERENCES books(isbn);
 
 alter table issued_book_status
 add foreign key (issued_emp_id) 
-REFERENCES Employees(emp_id);```
+REFERENCES Employees(emp_id);
+```
 
 ## 🛠️ Step 1: Creating Tables (DDL)
 ## 📥 Step 2: Inserting Sample Data (DML)
@@ -86,6 +87,7 @@ WITH
     ROWTERMINATOR = '\n',   
     FIRSTROW = 2             
 );```
+
 ## 🛠️ Step 1: Creating Tables (DDL)
 ## 📊 Step 3: Business Questions & SQL Solutions
 ❓ Question 1: What are the top 5 most borrowed books?
