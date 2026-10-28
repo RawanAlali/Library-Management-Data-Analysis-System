@@ -79,7 +79,8 @@ REFERENCES Employees(emp_id);
 ## 📥 Step 2: Inserting Sample Data (DML)
 We populated the database with test data to simulate real library operations.
 
-```BULK INSERT issued_book_status
+```
+BULK INSERT issued_book_status
 FROM 'C:\Users\HP\Desktop\training\najirh_SQL project\Library System\issued_status.csv'
 WITH
 (
