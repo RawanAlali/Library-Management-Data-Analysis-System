@@ -74,7 +74,8 @@ alter table issued_book_status
 add foreign key (issued_emp_id) 
 REFERENCES Employees(emp_id);```
 
-## 📥Step 2: Inserting Sample Data (DML)
+## 🛠️ Step 1: Creating Tables (DDL)
+## 📥 Step 2: Inserting Sample Data (DML)
 We populated the database with test data to simulate real library operations.
 
 ```BULK INSERT issued_book_status
@@ -84,7 +85,8 @@ WITH
     FIELDTERMINATOR = ',', 
     ROWTERMINATOR = '\n',   
     FIRSTROW = 2             
-);```
+);`
+## 🛠️ Step 1: Creating Tables (DDL)
 ## 📊 Step 3: Business Questions & SQL Solutions
 ❓ Question 1: What are the top 5 most borrowed books?
 Goal: Find popular books to know which ones to buy more of.
