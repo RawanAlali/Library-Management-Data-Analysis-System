@@ -72,19 +72,19 @@ REFERENCES books(isbn);
 
 alter table issued_book_status
 add foreign key (issued_emp_id) 
-REFERENCES Employees(emp_id);
+REFERENCES Employees(emp_id);```
 
 📥Step 2: Inserting Sample Data (DML)
 We populated the database with test data to simulate real library operations.
 
-BULK INSERT issued_book_status
+```BULK INSERT issued_book_status
 FROM 'C:\Users\HP\Desktop\training\najirh_SQL project\Library System\issued_status.csv'
 WITH
 (
     FIELDTERMINATOR = ',', 
     ROWTERMINATOR = '\n',   
     FIRSTROW = 2             
-);
+);```
 📊 Step 3: Business Questions & SQL Solutions
 ❓ Question 1: What are the top 5 most borrowed books?
 Goal: Find popular books to know which ones to buy more of.
